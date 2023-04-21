@@ -1,0 +1,378 @@
+*{
+    margin: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0%;
+    box-sizing: border-box;
+}
+#body{
+    background: url(Image/back);
+    height: 100vh;
+    width: 100vw;
+    background-position: 50%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+}
+header img{
+    width: 150px;
+    height: 80px;
+    position: relative;
+    top: 10px;
+    text-shadow: 1px 2px 8px gray;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+header li{
+    position: relative;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-shadow: 1px 2px 8px gray;
+    transition: 0.4s ease;
+}
+header ul li a.active::after,
+header ul li a:hover::after{
+    content: '';
+    position: absolute;
+    height: 3.5px;
+    border-radius: 20px;
+    width: 32%;
+    background-color: #fff;
+    top: 25px;
+    left: 20px;
+}
+header #x{
+    visibility: collapse;
+}
+#mobile{
+    font-size: 30px;
+    color: #fff;
+    display: none;
+}
+#body h1{
+    color: #fff;
+    padding: 140px 180px;
+    padding-bottom: 40px;
+    text-shadow: 1px 2px 8px gray;
+    font-size: 62px;
+    transition: 0.4 ease;
+}
+#body h2{
+    color: #fff;
+    padding: 40px 180px;
+    text-shadow: 1px 2px 8px gray;
+    transition: 0.4s ease;
+}
+/*** Hero Section ***/
+.hero{
+    display: flex;
+    padding: 40px 100px;
+}
+.hero #hero-text> h3{
+    color: rgb(81, 157, 81);
+    padding: 20px 0px;
+    font-weight: 100;
+    font-size: 22px;
+    font-family: 'raleway';
+}
+.hero #hero-text> h1{
+    font-weight: 300;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.hero #hero-text> p{
+    text-align: left;
+    padding-right: 40px;
+}
+.hero #hero-text> button{
+    padding: 10px 40px;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background-color:rgb(81, 157, 81);
+    margin-top: 40px;
+    transition: 0.3s ease-in;
+}
+.hero #hero-text> button:hover{
+    cursor: pointer;
+    color: rgb(81, 157, 81);
+    background-color: #fff;
+}
+.hero #hero-image img{
+    height: 50vh;
+}
+
+/*** Network Section ***/
+
+#network{
+    height: 45vh;
+    width: 100vw;
+    background-color: rgb(81, 157, 81);
+    text-align: center;
+}
+#network h1{
+    font-weight: 400;
+    color: #fff;
+    padding-top: 40px;
+    font-size: 40px;
+}
+#network .im-con{
+    padding-top: 40px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+#network .im-con div{
+    background-color: #fff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 40px;
+}
+#network img{
+    width: 80px;
+    height: 80px;
+}
+
+/*** Footer ****/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+    background-color: rgb(56, 51, 51);
+    width: 100vw;
+    color: white;
+}
+footer .col1 img{
+    height: 80px;
+    width: 150px;
+}
+footer .col1 h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+footer p {
+    font-size: 16px;
+}
+footer p span{
+    font-weight: 700;
+    font-size: 16px;
+    padding-right: 4px;
+}
+footer h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+footer .c1{
+    height: 30px;
+    width: 60px;
+}
+footer .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 20px 0px;
+}
+.row img{
+    border: 1px solid rgb(25, 113, 113);
+    border-radius: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+/*** Body 2 ***/
+
+#body2{
+    text-align: center;
+    padding: 20px 200px;
+    margin: 80px 0px;
+}
+#body2 h1{
+    margin-bottom: 40px;
+}
+#body2 p{
+    text-align: left;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+/*** card section ***/
+
+#card h1{
+    text-align: center;
+    font-weight: 600;
+    color: rgb(81, 157, 81);
+}
+#card-con{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 40px 100px;
+    overflow: hidden;
+}
+.card-item{
+    width: 300px;
+    margin: 0px 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px gray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card-item img{
+    width: 300px;
+    height: 280px;
+    border-top-right-radius:20px;
+    border-top-left-radius:20px ;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+.card-item img:hover{
+    height:290px;
+    width: 310px;
+    transform: translateX(-8px);
+}
+.card-item h3{
+    font-weight: 500;
+    padding: 10px 0px;
+    text-align: center;
+    color: rgb(81, 157, 81);
+}
+.card-item p{
+    color: #666666;
+    padding: 10px;
+}
+
+/*** Tab responsive ***/
+
+@media (max-width:910px){
+    header ul{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #1c5f38;
+        padding-top: 50px;
+        transition: 0.1s linear;
+    }
+    header ul li{
+        padding:10px 30px;
+        margin-bottom: 10px;
+    }
+    header ul li a.active::after,
+    header ul li a:hover::after{
+        top: 35px;
+        width: 20%;
+        left: 50px;
+    }
+    header #x{
+        visibility: visible;
+        font-size: 32px;
+        transition: 0.3s ease;
+    }
+    #mobile{
+        display: block;
+    }
+    #body h1{
+        padding: 140px 80px;
+        padding-bottom: 40px;
+    }
+    #body h2{
+        padding-left: 80px;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    #hero-text{
+        margin-bottom: 40px;
+    }
+    #hero-image{
+        box-sizing: content-box;
+        overflow: hidden;
+        text-align: center;
+        width: 100%;
+    }
+    #body2{
+        padding: 20px 100px;
+    }
+    #card-con{
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+    footer{
+        padding: 20px 40px;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:490px){
+    #body{
+        height: 90vh;
+        background-position: 60%;
+    }
+    header{
+        padding: 10px 40px;
+    }
+    header ul{
+        width: 200px;
+    }
+    #body h1{
+        font-size: 35px;
+        padding: 140px 40px;
+        padding-bottom: 20px;
+    }
+    #body h2{
+        font-size: 22px;
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+    .hero {
+        display: flex;
+        padding: 40px 25px;
+    }
+    #hero-text{
+        width: 100%;
+    }
+    .hero #hero-text> p {
+        text-align: center;
+    }
+    #network{
+        height: auto;
+    }
+    #network .im-con {
+        flex-direction: column;
+        align-items: center;
+    }
+    #body2 {
+        padding: 20px 25px;
+    }
+    #card-con {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-item {
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
